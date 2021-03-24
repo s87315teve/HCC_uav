@@ -55,30 +55,5 @@ for i in range(0,len(message1)):
     sock.sendto(msg1.encode("utf-8"), tello_address1)
     sock.sendto(msg2.encode("utf-8"), tello_address2)
     time.sleep(delay[i])
-"""
-while True: 
 
-    try:
-        msg = input("");
-
-        if not msg:
-            break  
-
-        if 'end' in msg:
-            print ('...')
-            sock.close()  
-            break
-
-        # Send data
-        # you have to send "command" first
-        msg = msg.encode(encoding="utf-8") 
-        sock.sendto(msg, tello_address1)
-        sock.sendto(msg, tello_address2)
-
-    except KeyboardInterrupt:
-        print ('\n . . .\n')
-        sock.close()  
-        break
-
-"""
 
