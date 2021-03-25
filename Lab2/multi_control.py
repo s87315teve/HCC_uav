@@ -18,10 +18,12 @@ locaddr = (host,port)
 
 # Create a UDP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-#sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
-tello_address1 = ('192.168.2.5', 8889)
-tello_address2 = ('192.168.2.6', 8889)
-#sock.bind(locaddr)
+sock.bind(locaddr)
+
+#please fill UAV IP address
+tello_address1 = ('???', 8889)
+tello_address2 = ('???', 8889)
+
 message1=["command", "takeoff",  "forward 200", "land"]
 message2=["command", "takeoff",  "forward 200", "land"]
 delay=[3,8,8,2]
