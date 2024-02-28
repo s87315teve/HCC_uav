@@ -50,7 +50,7 @@ recvThread.start()
 while True: 
 
     try:
-        msg = input("");
+        msg = input("Enter your command: ");
 
         if not msg:
             continue  
